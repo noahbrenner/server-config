@@ -3,13 +3,6 @@ Linux Server Configuration
 
 This is an overview of steps taken to configure a web server following Udacity's specifications as part of their [Full Stack Web Developer][] Nanodegree program. Specifically, the setup of an [Apache][] server running a [Flask][] app hosted on an [Amazon Lightsail][] instance running [Ubuntu][].
 
-Addresses
----------
-
-Server URL: http://52.36.249.184/
-
-SSH IP and port (for Udacity reviewer): `52.36.249.184:2200`
-
 Software installed
 ------------------
 

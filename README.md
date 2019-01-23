@@ -1,7 +1,7 @@
 Linux Server Configuration
 ==========================
 
-This is an overview of steps taken to configure a web server following Udacity's specifications as part of their [Full Stack Web Developer][] nanodegree program. Specifically, the setup of an [Apache][] server running a [Flask][] app hosted on an [Amazon Lightsail][] instance running [Ubuntu][].
+This is an overview of steps taken to configure a web server following Udacity's specifications as part of their [Full Stack Web Developer][] Nanodegree program. Specifically, the setup of an [Apache][] server running a [Flask][] app hosted on an [Amazon Lightsail][] instance running [Ubuntu][].
 
 Addresses
 ---------
@@ -19,7 +19,7 @@ Software installed
 * `libapache2-mod-wsgi-py3`
 * `postgresql`
 * `python3-pip`
-* `python3` (alredy installed)
+* `python3` (already installed)
 * `git` (already installed)
 
 ### Via `pip3`
@@ -44,6 +44,7 @@ When upgrading `apt` packages, there was a prompt about a new version of a grub 
 * https://forums.aws.amazon.com/thread.jspa?threadID=96207
 
 Setting the server timezone:
+
 * https://askubuntu.com/a/800675
 
 Configuring mod_wsgi:
@@ -117,7 +118,7 @@ These steps aren't necessarily in the order I took them. They're in an order tha
       # Mount WSGI app
       WSGIScriptAlias /myapp /var/www/wsgi-scripts/myapp.wsgi
       ```
-    - `sudo apache2ctl restart`, then visit the `/myapp` path at the the server URL in a browser
+    - `sudo apache2ctl restart`, then visit the `/myapp` path at the server URL in a browser.
 * Install Python app
     - `cd /var/www/wsgi-scripts && sudo git clone https://github.com/noahbrenner/instrument-catalog-py.git`
     - `cd instrument-catalog-py && sudo pipenv install --system --deploy --sequential`
